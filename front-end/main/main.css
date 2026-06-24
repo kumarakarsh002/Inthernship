@@ -1,8 +1,7 @@
 body{
-    background: url("https://wallpapercave.com/wp/wp4469548.jpg");
-    background-size: cover;
-    
-    
+    /* background: url("https://wallpapercave.com/wp/wp4469548.jpg");
+    background-size: cover; */
+    background-color: #f4f4f4;
 }
 .main-navigationsection{
     /* border: solid 2px grey; */
@@ -16,10 +15,14 @@ body{
     width: 90%;
     border-radius: 20px; 
     background-color: white;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(15px);
+    /* background: rgba(255, 255, 255, 0.15); */
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-backdrop-filter: blur(15px); */
     border: 1px solid rgba(255,255,255,0.3);
+     box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
     
 }
 .main-navigation-logo{
@@ -64,20 +67,25 @@ body{
 
 /* Hero Section */
 .main-herosection{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 .main-herosection-div{
     background-color: white;
-    border: 2px solid pink;
+     box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 18px;
     width: 90%;
     display: flex;
+    
 }
 .main-herosection-div-left{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex: 1.2;
 }
 .main-herosection-div-left h1{
@@ -93,14 +101,49 @@ body{
     
 }
 .main-herosection-div-left-button{
-    margin: 15px 0px 45px 25px;
-    padding: 10px 35px 10px 35px;
-    border: 2px solid gray;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    margin-left: 25px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
+    
+    /* Shadow */
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+    
+    /* Animation */
+    transition: all 0.3s ease;
 
 }
-.main-herosection-div-right{
-    border: 2px solid green;
-    flex: 1;
+.main-herosection-div-left-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(99, 102, 241, 0.45);
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
 }
+.main-herosection-div-left-button:active{
+    transform: translateY(1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+.main-herosection-div-right{
+    /* border: 2px solid green; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-herosection-div-right img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+
+
+
+/* Feature Section
+.main-featuresection{
+    border: solid 2px green;
+} */

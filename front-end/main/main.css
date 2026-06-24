@@ -2,6 +2,7 @@ body{
     /* background: url("https://wallpapercave.com/wp/wp4469548.jpg");
     background-size: cover; */
     background-color: #f4f4f4;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .main-navigationsection{
     /* border: solid 2px grey; */
@@ -43,14 +44,14 @@ body{
     
 }
 .main-navigation-navigate ul li a{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: black;
     text-decoration: none;
     
 }
 .main-navigation-navigate ul li a:hover{
-    color: red;
+    color: purple;
     
     
 }
@@ -81,7 +82,10 @@ body{
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 18px;
     width: 90%;
+    height: 500px;
     display: flex;
+    
+    overflow: hidden;
     
 }
 .main-herosection-div-left{
@@ -89,15 +93,28 @@ body{
     flex: 1.2;
 }
 .main-herosection-div-left h1{
-    font-size: 60px;
-    padding: 15px;
+    font-size: 65px;
+    padding: 20px;
     margin: 0px;
 }
+.main-herosection-div-left-h1design{
+    background: linear-gradient(
+    135deg,
+    #38bdf8 0%,
+    #2563eb 30%,
+    #7c3aed 70%,
+    #a855f7 100%
+);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
 .main-herosection-div-left p{
-    padding-top: 25px;
+    padding: 0px 20px 0px 20px;
     font-size: 20px;
-    color: green;
-    padding: 15px;
+    color: gray;
+    /* padding: 20px; */
     
 }
 .main-herosection-div-left-button{
@@ -134,9 +151,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .main-herosection-div-right img{
     height: 90%;
     width: 90%;
+    
     object-fit: cover;
 }
 

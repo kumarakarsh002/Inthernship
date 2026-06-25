@@ -203,6 +203,7 @@ body{
 .main-contactsupport-div-left img{
     width: 80%;
     height: 90%;
+    object-fit: cover;
 }
 .main-contactsupport-div-right{
     /* border: #7c3aed solid 2px; */

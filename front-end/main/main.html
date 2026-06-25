@@ -59,17 +59,27 @@
                 <img src="../image/customersupport.png" alt="contactsupportimage" />
             </div>
             <div class="main-contactsupport-div-right">
-                <h1>DetailsSection</h1>
-                <p>Name</p>
-                <input type="text" placeholder="Enter Your Name" class="main-contactsupport-div-right-input" />
-                <p>Email</p>
-                <input type="text" placeholder="Enter Your Email" class="main-contactsupport-div-right-input" />
-                <p>Mobile Number</p>
-                <input type="number" placeholder="Enter Your Mobile Number" class="main-contactsupport-div-right-input" />
-                <p>Feedback</p>
-                <input type="text" placeholder="Feedback" class="main-contactsupport-div-right-input" />
-                <br>
-                <input type="button" value="Submit" class="main-contactsupport-div-right-button" />
+                <h1>Customer & Support</h1>
+                <form class="main-contactsupport-div-right-form">
+                    <div class="main-contactsupport-div-right-form-input">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter Your Name"/>
+                    </div>
+                    <div class="main-contactsupport-div-right-form-input">
+                        <label>Email</label>
+                        <input type="text" placeholder="Enter Your Email"/>
+                    </div>
+                    <div class="main-contactsupport-div-right-form-input">
+                        <label>Mobile Number</label>
+                        <input type="tel" placeholder="Enter Your Mobile Number"  />
+                    </div>
+                    <div class="main-contactsupport-div-right-form-input">
+                        <label>Feedback</label>
+                        <textarea type="text" placeholder="Write Your Feedback Here ..."></textarea>
+                    </div>
+                    
+                </form>
+                <input type="button" value="Submit Feedback" class="main-contactsupport-div-right-button" onclick="CustomerSupport()" /> 
             </div>
         </div>
     </section>

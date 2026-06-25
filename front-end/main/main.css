@@ -9,6 +9,9 @@ body{
     display: flex;
     margin-top: 2%;
     justify-content: center;
+    position: sticky;
+    z-index: 1000;
+    top: 20px;
 }
 .main-navigation{
     /* border: solid 2px pink; */
@@ -24,6 +27,7 @@ body{
         0 10px 30px rgba(0, 0, 0, 0.12),
         0 4px 12px rgba(0, 0, 0, 0.08);
     overflow: hidden;
+    
     
 }
 .main-navigation-logo{
@@ -69,7 +73,7 @@ body{
 /* Hero Section */
 .main-herosection{
     /* border: 2px solid green; */
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
@@ -167,3 +171,82 @@ body{
 .main-featuresection{
     border: solid 2px green;
 } */
+
+
+.main-contactsupportsection{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.main-contactsupport-div{
+    background-color: white;
+     box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 18px;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    
+    overflow: hidden;
+}
+.main-contactsupport-div-left{
+    /* border: #2563eb solid 2px; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-contactsupport-div-left img{
+    width: 80%;
+    height: 90%;
+}
+.main-contactsupport-div-right{
+    /* border: #7c3aed solid 2px; */
+    flex: 1;
+    overflow: hidden;
+}
+.main-contactsupport-div-right h1{
+    text-align: center;
+}
+.main-contactsupport-div-right p{
+    margin: 3% 0% 1% 25%;
+}
+.main-contactsupport-div-right-input{
+    border: 1px solid gray;
+    padding: 10px 85px 10px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 25%;
+}
+.main-contactsupport-div-right-button{
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    margin-top: 25px;
+    margin-left: 38%;
+    padding: 14px 45px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    
+    /* Shadow */
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+    
+    /* Animation */
+    transition: all 0.3s ease;
+
+}
+.main-contactsupport-div-right-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(99, 102, 241, 0.45);
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+.main-contactsupport-div-right-button:active{
+    transform: translateY(1px);
+    box-shadow: 0 12px 28px rgba(99, 102, 241, 0.03);
+}
